@@ -9,6 +9,6 @@ module('Integration | Component | jumbo', function (hooks) {
     await render(hbs`<Jumbo>Hello World</Jumbo>`);
     assert.dom('.jumbo').exists();
     assert.dom('.jumbo').hasText('Hello World');
-    assert.dom('jumbo .tomster').exists();
+    assert.dom('.jumbo .tomster').exists();
   });
 });
